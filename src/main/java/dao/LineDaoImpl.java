@@ -1,19 +1,15 @@
 package dao;
 
 import dto.Line;
-import dto.query.AverageBuildDurationForEachGeoZoneDto;
-import dto.query.CountUniqueCustomerPerContractDto;
 import dto.field.*;
 import dto.field.validation.LineValidationVisitor;
-import dto.query.CountUniqueCustomerPerGeozoneDto;
-import dto.query.UniqueCustomersPerGeozoneDto;
 import exception.LineException;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.StringTokenizer;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
-
-import static java.util.stream.Collectors.groupingBy;
 
 public class LineDaoImpl implements LineDao {
 

@@ -1,6 +1,5 @@
 package dto.field;
 
-import dto.field.validation.LineValidationVisitorImpl;
 import exception.FieldException;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,6 +27,6 @@ public class BuildDurationTest extends BaseFieldTest {
     public void nullValueTest() throws FieldException {
         BuildDuration.Builder builder = BuildDuration.Builder.newInstance(noValidationVisitor);
         BuildDuration buildDuration = builder.value(null).build();
-        Assert.assertEquals(null, buildDuration.getValue());
+        Assert.assertNull(buildDuration.getValue());
     }
 }

@@ -1,6 +1,5 @@
 package dto.field;
 
-import dto.field.validation.LineValidationVisitorImpl;
 import exception.FieldException;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,6 +27,6 @@ public class GeoZoneTest extends BaseFieldTest {
     public void nullValueTest() throws FieldException {
         GeoZone.Builder builder = GeoZone.Builder.newInstance(noValidationVisitor);
         GeoZone geoZone = builder.value(null).build();
-        Assert.assertEquals(null, geoZone.getValue());
+        Assert.assertNull(geoZone.getValue());
     }
 }

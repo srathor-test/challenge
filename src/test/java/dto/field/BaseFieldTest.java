@@ -1,7 +1,6 @@
 package dto.field;
 
 import dto.field.validation.LineValidationVisitor;
-import dto.field.validation.LineValidationVisitorImpl;
 import exception.FieldException;
 
 public class BaseFieldTest {

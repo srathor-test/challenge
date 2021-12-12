@@ -1,10 +1,6 @@
 package dao;
 
 import dto.Line;
-import dto.query.AverageBuildDurationForEachGeoZoneDto;
-import dto.query.CountUniqueCustomerPerContractDto;
-import dto.query.CountUniqueCustomerPerGeozoneDto;
-import dto.query.UniqueCustomersPerGeozoneDto;
 import exception.LineException;
 
 import java.util.List;

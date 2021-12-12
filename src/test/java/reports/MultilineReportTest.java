@@ -55,6 +55,4 @@ public class MultilineReportTest {
         String[] lines = multilineReport.split(LINE_SEPARATORS);
         Assert.assertEquals(4, lines.length);
     }
-
-
 }

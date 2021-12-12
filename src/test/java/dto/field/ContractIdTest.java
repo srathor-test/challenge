@@ -1,6 +1,5 @@
 package dto.field;
 
-import dto.field.validation.LineValidationVisitorImpl;
 import exception.FieldException;
 import org.junit.Assert;
 import org.junit.Test;
@@ -28,6 +27,6 @@ public class ContractIdTest extends BaseFieldTest {
     public void nullValueTest() throws FieldException {
         ContractId.Builder builder = ContractId.Builder.newInstance(noValidationVisitor);
         ContractId contractId = builder.value(null).build();
-        Assert.assertEquals(null, contractId.getValue());
+        Assert.assertNull(contractId.getValue());
     }
 }
